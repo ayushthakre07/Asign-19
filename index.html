@@ -2,155 +2,106 @@
 <html>
 <head>
 <title>Internship Certificate</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
-.full-page{
-    
+body {
+  background-color: #f5f5f5;
+  font-family: Arial;
 }
 
-.ribbon{
-    height:200px;
-    width:200px;
-    margin-top:px;
-    margin-left:px;
+.certificate {
+  width: 900px;
+  height: 600px;
+  background-color: white;
+  border: 1px solid black;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px gray;
+  position: relative;
+  padding: 20px;
 }
 
-.certificate-body{
-    height:600px;
-    width:900px;
-    background-color:white;
-    border-radius:3px;
-    box-shadow:0 0 5px 0px black;
-    margin:0 auto;
-    margin-top:50px;
-    border:1px solid black;
-    position:relative;
+.ribbon {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.title{
-    font-size:50px;
-    text-align:center;
-    margin-top:-200px;
-    margin-bottom:5px;
+.title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: -100px;
 }
 
-.logo{
-    height:100px;
-    width:100px;
-    display:block;
-    margin:auto;
-    margin-bottom:-30px;
+.logo {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
-.certificate-detail{
-    font-size:40px;
-    text-align:center;
-    display:block;
+.details {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
 }
 
-.name-design{
-    font-size:40px;
-    text-shadow:2px 2px px black;
-    display:inline-block;
-    margin-bottom:10px;
-    margin-top:5px;
+.name {
+  font-size: 35px;
+  border-bottom: 2px dashed black;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
-.name-design-underline{
-    border-bottom:2px dashed black;
-    width:60%;
+.sign {
+  width: 100px;
+  height: 80px;
+  margin-left: 100px;
+  margin-top: 30px;
 }
 
-.small-text{
-    font-size:25px;
+.stamp {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  opacity: 0.8;
+  transform: rotate(-10deg);
 }
 
-.teacher{
-    display:flex;
-    margin-top:-20px;
-    margin-left:50px;
-}
-
-.sign-image-edit{
-    display:block;
-    margin-top:-15px;
-}
-
-.director-sign{
-    height:180px;
-    width:100px;
-    margin-left:120px;
-    margin-bottom:-50px;
-}
-
-.certificate-edit{
-    height:150px;
-    width:150px;
-    position:absolute;
-    right:60px;
-    bottom:60px;
-    transform:rotate(-15deg);
-    opacity:0.9;
-}
-
-.director-sign-2{
-    height:100px;
-    width:100px;
-    margin-left:680px;
-    margin-top:-30px;
-}
-
-.director{
-    margin-left:40px;
-    border-top:1px dashed black;
-}
-
-.manager{
-    border-top:1px dashed black;
-    margin-left:400px;
-}
-
-.left-side-margin{
-    margin-left:50px;
+.director {
+  margin-top: 30px;
+  margin-left: 100px;
+  border-top: 1px dashed black;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
 }
 </style>
 </head>
-<body class="full-page">
+<body>
 
-<div class="certificate-body">
-    <img src="./symbol.jpg" class="ribbon">
+<div class="certificate">
+  <img src="symbol.jpg" class="ribbon">
 
-    <div class="title">
-        CERTIFICATE <br> of Completion
-    </div>
+  <h1 class="title">Certificate of Completion</h1>
 
-    <p class="certificate-detail">
-        The certificate is awarded to 
-        <br>
-        <span class="name-design name-design-underline">
-            Mr. Ayush Thakre
-        </span>
-        <br>
-        <span class="small-text">
-        for the successful completion of the Full Stack Web Development Internship conducted on 
-        the Road To Code platform and technical excellence.
-        </span>
-    </p>
+  <p class="details">
+    This certificate is proudly presented to <br><br>
+    <span class="name">Mr. Ayush Thakre</span><br><br>
+    for successfully completing the <b>Full Stack Web Development Internship</b><br>
+    on the Road To Code platform for showing great performance and dedication.
+  </p>
 
-    <div class="sign-image-edit">
-        <img src="./sign.jpg" class="director-sign">
-        <img src="./stamp.png" class="certificate-edit">
-    </div>
+  <img src="sign.jpg" class="sign">
+  <img src="stamp.png" class="stamp">
 
-    <div class="teacher">
-        <div class="director">
-            <span class="left-side-margin">Director</span>
-            <br>
-            (Sr.Software Engineer)
-            <br>
-            <span style="margin-left:30px;">Suraj Shende</span>
-        </div>
-    </div>
+  <div class="director">
+    Director<br>
+    (Sr. Software Engineer)<br>
+    Suraj Shende
+  </div>
 </div>
 
 </body>
