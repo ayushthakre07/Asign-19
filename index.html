@@ -1,68 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Internship Certificate</title>
+<title> Internship Certificate </title>
+
 <style>
-body {
+body{
   background-color: #f5f5f5;
   font-family: Arial;
+  margin: 0;
+  padding: 0;
 }
 
-.certificate {
-  width: 900px;
-  height: 600px;
+.certificate{
+  width: 90%;
+  max-width: 900px;
   background-color: white;
   border: 1px solid black;
-  margin: 50px auto;
+  margin: 30px auto;
   box-shadow: 0px 0px 10px gray;
-  position: relative;
   padding: 20px;
+  position: relative;
 }
 
-.ribbon {
-  width: 150px;
-  height: 150px;
-  margin-top: 10px;
-  margin-left: 10px;
+.ribbon{
+  width: 120px;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 20px;
 }
 
-.title {
+.title{
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
-  margin-top: -100px;
+  margin-top: -80px;
+  margin-bottom: 30px;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
-}
-
-.details {
+.details{
   text-align: center;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
-.name {
-  font-size: 35px;
+.name{
+  font-size: 30px;
   border-bottom: 2px dashed black;
   display: inline-block;
   padding-bottom: 5px;
 }
 
-.sign {
-  width: 100px;
-  height: 80px;
-  margin-left: 100px;
-  margin-top: 30px;
+.sign{
+  width: 90px;
+  height: auto;
+  margin-left: 80px;
+  margin-top: 40px;
 }
 
-.stamp {
-  width: 120px;
-  height: 120px;
+.stamp{
+  width: 100px;
+  height: auto;
   position: absolute;
   right: 60px;
   bottom: 60px;
@@ -70,38 +67,108 @@ body {
   transform: rotate(-10deg);
 }
 
-.director {
+.director{
   margin-top: 30px;
-  margin-left: 100px;
+  margin-left: 80px;
   border-top: 1px dashed black;
   width: 200px;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+/* responsive part */
+@media screen and (max-width: 768px){
+  .title{
+    font-size: 30px;
+    margin-top: -60px;
+  }
+
+  .details{
+    font-size: 18px;
+  }
+
+  .name{
+    font-size: 25px;
+  }
+
+  .sign{
+    width: 70px;
+    margin-left: 50px;
+  }
+
+  .stamp{
+    width: 80px;
+    right: 40px;
+    bottom: 50px;
+  }
+
+  .director{
+    width: 150px;
+    margin-left: 50px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .title{
+    font-size: 25px;
+    margin-top: -40px;
+  }
+
+  .details{
+    font-size: 16px;
+  }
+
+  .name{
+    font-size: 22px;
+  }
+
+  .sign{
+    width: 60px;
+    margin-left: 40px;
+  }
+
+  .stamp{
+    width: 70px;
+    right: 30px;
+    bottom: 40px;
+  }
+
+  .director{
+    width: 120px;
+    margin-left: 40px;
+    font-size: 13px;
+  }
 }
 </style>
 </head>
+
 <body>
 
 <div class="certificate">
+
   <img src="symbol.jpg" class="ribbon">
 
-  <h1 class="title">Certificate of Completion</h1>
+  <h1 class="title"> Certificate of Completion </h1>
 
   <p class="details">
-    This certificate is proudly presented to <br><br>
-    <span class="name">Mr. Ayush Thakre</span><br><br>
-    for successfully completing the <b>Full Stack Web Development Internship</b><br>
-    on the Road To Code platform for showing great performance and dedication.
+  This certificate is proudly presented to 
+  <br><br>
+  <span class="name"> Mr. Ayush Thakre </span>
+  <br><br>
+  for successfully completing the <b>Full Stack Web Development Internship</b><br>
+  on the Road To Code platform for showing great performance and dedication.
   </p>
 
   <img src="sign.jpg" class="sign">
   <img src="stamp.png" class="stamp">
 
   <div class="director">
-    Director<br>
-    (Sr. Software Engineer)<br>
-    Suraj Shende
+  Director <br>
+  (Sr. Software Engineer) <br>
+  Suraj Shende
   </div>
+
 </div>
 
 </body>
